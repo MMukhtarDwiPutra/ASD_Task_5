@@ -45,19 +45,20 @@ void playMusic(address P)
 }
 
 
-void shuffleList(List &L)
+void shuffleList(List &L, int ndata)
 {
     /**
     * PR : mengacak isi (elemen) dari list L
     * FS : isi (elemen) dari list teracak
     */
     //-------------your code here-------------
+    int n = ndata / 2;
     address P,Q = new elmlist;
     if (first(L)!=NULL)
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < n; i++)
         {
-            int n = randomInt(10);
+            n = randomInt(10);
             Q = first(L);
             for(int j = 0; j < n; j++)
             {

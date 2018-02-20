@@ -217,7 +217,7 @@ void runMenu(int menu)
         break;
     case 11:
         // shuffle list
-        shuffleList(L);
+        shuffleList(L, index_ID);
         cout<<"press enter";
         getche();
         break;
